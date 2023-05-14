@@ -6,9 +6,15 @@ export function createMarkup(data) {
         `<img src="${obj.flags.svg}" alt="${
           obj.flags.alt
         }" width="40" height="30"/> 
-				<h2>${obj.name.official}</h2> <p>Capital:${obj.capital}</p> <p>Population:${
+				<h2 class="country-Style">${
+          obj.name.official
+        }</h2> <p class="info"><span class="text-title">Capital:</span> ${
+          obj.capital
+        }</p> <p class="info"><span class="text-title">Population:</span> ${
           obj.population
-        }</p> <p>Languages:${Object.values(obj.languages)}</p>`
+        }</p> <p class="info"><span class="text-title">Languages:</span> ${Object.values(
+          obj.languages
+        )}</p>`
       );
     }, '');
   }
@@ -18,7 +24,8 @@ export function createListMarkup(listObj) {
   return listObj.reduce((markup, obj) => {
     return (
       markup +
-      `<li><img src="${obj.flags.svg}" alt="${obj.flags.alt}" width="40" height="30"/> ${obj.name.official}</li>`
+      `<li><img src="${obj.flags.svg}" alt="${obj.flags.alt}"
+			 width="40" height="30"/> ${obj.name.official}</li>`
     );
   }, '');
 }

@@ -18,3 +18,24 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-list {
+  list-style: none;
+}
+
+.info {
+  font-size: 20px;
+  color: teal;
+}
+
+.text-title {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.country-Style {
+  display: inline-block;
+  font-weight: 500;
+}

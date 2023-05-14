@@ -25,7 +25,7 @@ export function createListMarkup(listObj) {
     return (
       markup +
       `<li><img src="${obj.flags.svg}" alt="${obj.flags.alt}"
-			 width="40" height="30"/> ${obj.name.official}</li>`
+			 width="40" height="30"/> <p class="list-text">${obj.name.official}</p></li>`
     );
   }, '');
 }
